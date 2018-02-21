@@ -1,0 +1,38 @@
+<!--
+	Generated template for the ModalResultPage page.
+
+	See http://ionicframework.com/docs/components/#navigation for more info on
+	Ionic pages and navigation.
+-->
+<ion-header>
+
+	<ion-navbar>
+		<ion-title>Resultado</ion-title>
+		<ion-buttons end>
+			<button ion-button icon-only clear (click)="closeModal()">
+				<ion-icon name="md-close"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-row>
+		<ion-col class="label">Mínimo:</ion-col>
+		<ion-col>{{min}}</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col class="label">Máximo:</ion-col>
+		<ion-col>{{max}}</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col class="label">Itens:</ion-col>
+		<ion-col>{{items}}</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col class="label">Média:</ion-col>
+		<ion-col>{{average}}</ion-col>
+	</ion-row>
+</ion-content>

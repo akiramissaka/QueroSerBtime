@@ -1,0 +1,29 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			Teste BTime
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<p>
+		Este programa recebe uma lista de números inteiros e retorna o valor mínimo, valor máximo, numero de elementos na lista e o valor médio.
+	</p>
+	<p>
+		Link para o problema: <a href="#" (click)="openLink($event, 'http://dojopuzzles.com/problemas/exibe/calculando-estatisticas-simples/')">http://dojopuzzles.com/problemas/exibe/calculando-estatisticas-simples/</a>
+	</p>
+	<ion-row>
+		<ion-col><ion-label>Valor:</ion-label></ion-col>
+		<ion-col><ion-input #numInput type="number" [(ngModel)]="num"></ion-input></ion-col>
+		<ion-col><button ion-button (click)="addNumber()">Adicionar</button></ion-col>
+		<ion-col><button ion-button (click)="calculate()">Calcular</button></ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col>
+			<ion-list>
+				<ion-item *ngFor="let num of arrNumbers">{{num}}</ion-item>
+			</ion-list>
+		</ion-col>
+	</ion-row>
+</ion-content>
